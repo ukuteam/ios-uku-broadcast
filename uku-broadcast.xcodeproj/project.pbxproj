@@ -11,6 +11,8 @@
 		CAB350F627B11D5C00F1B684 /* uku_broadcast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB350EB27B11D5C00F1B684 /* uku_broadcast.framework */; };
 		CAB350FB27B11D5C00F1B684 /* uku_broadcastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB350FA27B11D5C00F1B684 /* uku_broadcastTests.swift */; };
 		CAB350FC27B11D5C00F1B684 /* uku_broadcast.h in Headers */ = {isa = PBXBuildFile; fileRef = CAB350EE27B11D5C00F1B684 /* uku_broadcast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAB3510627B122A100F1B684 /* UkuBroadcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3510527B122A100F1B684 /* UkuBroadcast.swift */; };
+		DE6D2DFCC8631C0EA3614077 /* Pods_uku_broadcast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 278ED4DCDCBBA6CB67FBDC0C /* Pods_uku_broadcast.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		278ED4DCDCBBA6CB67FBDC0C /* Pods_uku_broadcast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uku_broadcast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DF30A518DFA8D581AAE055 /* Pods-uku-broadcast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uku-broadcast.debug.xcconfig"; path = "Target Support Files/Pods-uku-broadcast/Pods-uku-broadcast.debug.xcconfig"; sourceTree = "<group>"; };
 		CAB350EB27B11D5C00F1B684 /* uku_broadcast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = uku_broadcast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB350EE27B11D5C00F1B684 /* uku_broadcast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uku_broadcast.h; sourceTree = "<group>"; };
 		CAB350EF27B11D5C00F1B684 /* uku_broadcast.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = uku_broadcast.docc; sourceTree = "<group>"; };
 		CAB350F527B11D5C00F1B684 /* uku-broadcastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "uku-broadcastTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB350FA27B11D5C00F1B684 /* uku_broadcastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uku_broadcastTests.swift; sourceTree = "<group>"; };
+		CAB3510527B122A100F1B684 /* UkuBroadcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UkuBroadcast.swift; sourceTree = "<group>"; };
+		D9F3756AD4F66DC785FE4BC0 /* Pods-uku-broadcast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uku-broadcast.release.xcconfig"; path = "Target Support Files/Pods-uku-broadcast/Pods-uku-broadcast.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6D2DFCC8631C0EA3614077 /* Pods_uku_broadcast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +57,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09FA823F20A91CB7ABEF0F3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5DF30A518DFA8D581AAE055 /* Pods-uku-broadcast.debug.xcconfig */,
+				D9F3756AD4F66DC785FE4BC0 /* Pods-uku-broadcast.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6DBA3E31C3CD140A92CDC93C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				278ED4DCDCBBA6CB67FBDC0C /* Pods_uku_broadcast.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CAB350E127B11D5C00F1B684 = {
 			isa = PBXGroup;
 			children = (
 				CAB350ED27B11D5C00F1B684 /* uku-broadcast */,
 				CAB350F927B11D5C00F1B684 /* uku-broadcastTests */,
 				CAB350EC27B11D5C00F1B684 /* Products */,
+				09FA823F20A91CB7ABEF0F3C /* Pods */,
+				6DBA3E31C3CD140A92CDC93C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				CAB350EE27B11D5C00F1B684 /* uku_broadcast.h */,
+				CAB3510527B122A100F1B684 /* UkuBroadcast.swift */,
 				CAB350EF27B11D5C00F1B684 /* uku_broadcast.docc */,
 			);
 			path = "uku-broadcast";
@@ -103,6 +130,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAB350FF27B11D5C00F1B684 /* Build configuration list for PBXNativeTarget "uku-broadcast" */;
 			buildPhases = (
+				76CB228ECC2379CADBADA650 /* [CP] Check Pods Manifest.lock */,
 				CAB350E627B11D5C00F1B684 /* Headers */,
 				CAB350E727B11D5C00F1B684 /* Sources */,
 				CAB350E827B11D5C00F1B684 /* Frameworks */,
@@ -189,12 +217,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		76CB228ECC2379CADBADA650 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uku-broadcast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CAB350E727B11D5C00F1B684 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CAB350F027B11D5C00F1B684 /* uku_broadcast.docc in Sources */,
+				CAB3510627B122A100F1B684 /* UkuBroadcast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -327,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +395,7 @@
 		};
 		CAB3510027B11D5C00F1B684 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5DF30A518DFA8D581AAE055 /* Pods-uku-broadcast.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -369,6 +424,7 @@
 		};
 		CAB3510127B11D5C00F1B684 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F3756AD4F66DC785FE4BC0 /* Pods-uku-broadcast.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -398,6 +454,7 @@
 		CAB3510327B11D5C00F1B684 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X7H82CY5HL;
@@ -414,6 +471,7 @@
 		CAB3510427B11D5C00F1B684 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X7H82CY5HL;

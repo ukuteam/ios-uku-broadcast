@@ -15,4 +15,10 @@ FOUNDATION_EXPORT const unsigned char uku_broadcastVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <uku_broadcast/PublicHeader.h>
 
-
+#ifdef __cplusplus
+extern “C” {
+#endif
+typedef void (*RequestFooCallback)(const int status);
+#ifdef __cplusplus
+}
+#endif

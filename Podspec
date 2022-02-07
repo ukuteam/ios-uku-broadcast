@@ -1,0 +1,20 @@
+Pod::Spec.new do |s|
+s.name             = 'uku_broadcast'
+s.version          = '0.0.1'
+s.summary          = 'Broadcast to a uku room'
+s.description      = <<-DESC
+Broadcast to a uku room
+s.homepage         = 'https://www.uku.wtf'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'Hugo Pievic' => '' }
+s.source           = { :git => 'git@github.com:"https://github.com/ukuteam/ios-uku-broadcast"', :tag => s.version.to_s }
+s.ios.deployment_target = '14.0'
+s.swift_version = '5.0'
+s.frameworks = 'AVFoundation', "AgoraRtcEngine_iOS" '
+s.static_framework = true
+framework             = s.name
+s.source_files        = [ "%s.framework/**/*.{h,m}" % [framework] ]
+s.preserve_paths      = "%s.framework" % [framework]
+s.public_header_files = "%s.framework/**/*.h" % [framework]
+s.vendored_frameworks = '%s.framework' % [framework]
+end
